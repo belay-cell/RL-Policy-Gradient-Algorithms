@@ -2,8 +2,6 @@
 
 **Implementation of REINFORCE, A2C, and DDPG** using PyTorch and Gymnasium for classic control tasks.
 
-> Professional refactoring of KAIST CS377 Reinforcement Learning coursework into production-ready code.
-
 ## 🎯 Overview
 
 This repository contains modular, well-documented implementations of three fundamental policy gradient algorithms:
@@ -160,39 +158,15 @@ Critic: θv ← θv - α ∇θv[V(s) - (R + γV(s'))]^2
 | Soft Update (τ) | - | - | 0.005 |
 | Solve Criteria | 450 | 450 | -200 |
 
-## 🧪 Technical Highlights
-
-- ✅ **Type Hints**: Full Python type annotations
-- ✅ **Modular Design**: Separate files for each algorithm
-- ✅ **Reproducible**: Fixed seed (54321) for consistent results
-- ✅ **Efficient**: Vectorized PyTorch operations
-- ✅ **Clean Code**: PEP 8 compliant
-- ✅ **Progress Tracking**: tqdm progress bars with live stats
-
-## 📝 Key Learnings
-
-1. **Variance Matters**: Baseline in REINFORCE dramatically stabilizes training
-2. **Online vs Batch**: A2C updates every step vs REINFORCE waits for full episodes
-3. **Exploration**: DDPG needs Gaussian noise since policy is deterministic
-4. **Stability**: Target networks in DDPG prevent Q-value divergence
 
 ## 🔗 References
 
 - Sutton & Barto. *Reinforcement Learning: An Introduction* (2nd ed.), Chapter 13
 - Mnih et al. *Asynchronous Methods for Deep Reinforcement Learning* (2016)
 - Lillicrap et al. *Continuous Control with Deep Reinforcement Learning* (2015)
+  
 
-## 💼 Portfolio Showcase
-
-**This project demonstrates:**
-
-- ✅ Deep RL algorithm implementation from scratch
-- ✅ PyTorch proficiency for neural network development  
-- ✅ Clean code architecture and software engineering best practices
-- ✅ Technical documentation and reproducible research
-- ✅ MLOps readiness for production deployment
-
-> *Originally developed for KAIST CS377 Reinforcement Learning (Student ID: 20220934), refactored into professional-grade codebase.*
+> *Originally developed for KAIST CS377 Reinforcement Learning, refactored into professional-grade codebase.*
 
 ## 🛡️ License
 
